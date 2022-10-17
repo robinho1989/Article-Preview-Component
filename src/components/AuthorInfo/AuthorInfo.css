@@ -1,0 +1,34 @@
+.authorInfoContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    padding: 0 2rem 2rem 2rem;
+}
+.authorDescription {
+	display: flex;
+	align-items: center;
+}
+.authorInfoDate {
+	color: hsl(217, 19%, 35%);
+}
+.authorInfoImage {
+	border-radius: 50%;
+	height: 40px;
+	margin-right: 1.5rem;
+	width: 40px;
+}
+.authorInfoName {
+	font-weight: 700;
+}
+.shareButtonContainer {
+	background-color: hsl(210, 46%, 95%);
+	border-radius: 50%;
+    cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	width: 30px;
+    z-index: 5;
+}
+

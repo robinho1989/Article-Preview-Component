@@ -1,0 +1,17 @@
+.cardContainer {
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	min-width: 250px;
+	max-width: 500px;
+	width: 100%;
+}
+
+@media (min-width: 560px) {
+	.cardContainer {
+		flex-direction: row;
+		max-width: 750px;
+		max-height: 350px;
+	}
+}
