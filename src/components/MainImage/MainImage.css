@@ -6,8 +6,7 @@
 }
 @media (min-width: 560px) {
 	.cardImage {
-	
-		height: 100%;
+		height: auto;
 		width: 35%;
 	}
 }
