@@ -4,13 +4,7 @@ import './AuthorInfo.css';
 export const AuthorInfo = () => {
 	const [active, isActive] = useState(false);
 	return (
-		<footer
-			className='footer'
-			style={{
-				backgroundColor: active ? 'hsl(217, 19%, 35%)' : 'hsl(210, 46%, 95%)',
-				paddingTop: active ? '2rem' : '0',
-			}}
-		>
+		<footer className={active ? 'modalActive' : 'modalDisable'}>
 			<div className='authorInfoContainer'>
 				<div
 					className='authorDescription'
