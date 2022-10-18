@@ -17,7 +17,8 @@ export const AuthorInfo = () => {
 						<p className='authorInfoDate'> 28 Jun 2020</p>
 					</div>
 				</div>
-				<Modal render={isActive} />
+				{isActive&&<Modal/>}
+			
 				<button
 					className='shareButtonContainer'
 					onClick={() => {

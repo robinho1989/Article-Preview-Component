@@ -1,7 +1,7 @@
-import'./Modal.css'
-export const Modal = ({render}:{render:boolean}) => {
+import './Modal.css';
+export const Modal = () => {
 	return (
-		<div className='modalContainer' style={{display:render?'flex':'none' }}>
+		<div className='modalContainer'>
 			<p className='modalParagraph'>Share</p>
 			<ul className='iconList'>
 				<li className='iconItem'>
