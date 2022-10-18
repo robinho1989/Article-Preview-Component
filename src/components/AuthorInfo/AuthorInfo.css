@@ -40,3 +40,7 @@
 	background-color: hsl(210, 46%, 95%);
 	padding-top: 0;
 }
+.displayNone{
+	display: none;
+}
+

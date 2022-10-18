@@ -2,14 +2,11 @@ import { Modal } from '../Modal/Modal';
 import { useState } from 'react';
 import './AuthorInfo.css';
 export const AuthorInfo = () => {
-	const [active, isActive] = useState(false);
+	const [isActive, setIsActive] = useState(false);
 	return (
-		<footer className={active ? 'modalActive' : 'modalDisable'}>
+		<footer className={isActive ? 'modalActive' : 'modalDisable'}>
 			<div className='authorInfoContainer'>
-				<div
-					className='authorDescription'
-					style={{ display: active ? 'none' : 'flex' }}
-				>
+				<div className={isActive ? 'displayNone' : 'authorDescription'}>
 					<img
 						src='./Public/Images/Pictures/avatar-michelle.jpg'
 						alt='A picture of author'
@@ -20,11 +17,11 @@ export const AuthorInfo = () => {
 						<p className='authorInfoDate'> 28 Jun 2020</p>
 					</div>
 				</div>
-				<Modal render={active} />
+				<Modal render={isActive} />
 				<button
 					className='shareButtonContainer'
 					onClick={() => {
-						isActive((display) => !display);
+						setIsActive((display) => !display);
 					}}
 				>
 					<img
