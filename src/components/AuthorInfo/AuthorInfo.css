@@ -22,6 +22,7 @@
 }
 .shareButtonContainer {
 	background-color: hsl(210, 46%, 95%);
+	border: none;
 	border-radius: 50%;
     cursor: pointer;
 	display: flex;

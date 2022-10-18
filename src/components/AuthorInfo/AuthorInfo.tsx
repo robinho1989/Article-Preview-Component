@@ -2,19 +2,19 @@ import { Modal } from '../Modal/Modal';
 import { useState } from 'react';
 import './AuthorInfo.css';
 export const AuthorInfo = () => {
-	const [render, setIsRender] = useState(false);
+	const [active, isActive] = useState(false);
 	return (
 		<footer
 			className='footer'
 			style={{
-				backgroundColor: render ? 'hsl(217, 19%, 35%)' : 'hsl(210, 46%, 95%)',
-				paddingTop:render?'2rem':'0'
+				backgroundColor: active ? 'hsl(217, 19%, 35%)' : 'hsl(210, 46%, 95%)',
+				paddingTop: active ? '2rem' : '0',
 			}}
 		>
 			<div className='authorInfoContainer'>
 				<div
 					className='authorDescription'
-					style={{ display: render ? 'none' : 'flex' }}
+					style={{ display: active ? 'none' : 'flex' }}
 				>
 					<img
 						src='./Public/Images/Pictures/avatar-michelle.jpg'
@@ -26,18 +26,18 @@ export const AuthorInfo = () => {
 						<p className='authorInfoDate'> 28 Jun 2020</p>
 					</div>
 				</div>
-				<Modal render={render} />
-				<div
+				<Modal render={active} />
+				<button
 					className='shareButtonContainer'
 					onClick={() => {
-						setIsRender((display) => !display);
+						isActive((display) => !display);
 					}}
 				>
 					<img
 						src='./Public/Images/Icons/icon-share.svg'
 						className='shareButton'
 					></img>
-				</div>
+				</button>
 			</div>
 		</footer>
 	);
