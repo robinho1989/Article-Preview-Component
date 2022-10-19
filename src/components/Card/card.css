@@ -5,7 +5,10 @@
 	overflow: hidden;
 	min-width: 250px;
 	max-width: 500px;
+	
+
 	width: 100%;
+	z-index: 0;
 }
 
 @media (min-width: 560px) {

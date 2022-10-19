@@ -3,7 +3,6 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 2rem 2rem 2rem;
-	position: relative;
 }
 .authorDescription {
 	display: flex;
@@ -31,7 +30,6 @@
 	align-items: center;
 	height: 30px;
 	width: 30px;
-	z-index: 5;
 }
 .modalActive {
 	background-color: hsl(217, 19%, 35%);
@@ -41,7 +39,6 @@
 	background-color: hsl(210, 46%, 95%);
 	padding-top: 0;
 }
-.displayNone{
+.displayNone {
 	display: none;
 }
-

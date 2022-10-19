@@ -3,11 +3,14 @@ import { TextContent } from '../TextContent/TextContent';
 import './card.css';
 export const Card = () => {
 	return (
-		<article className='cardContainer'>
-			<Mainimage />
-			<div className='cardContent'>
-				<TextContent />
-			</div>
-		</article>
+		<div className='content'>
+			
+			<article className='cardContainer'>
+				<Mainimage />
+				<div className='cardContent'>
+					<TextContent />
+				</div>
+			</article>
+		</div>
 	);
 };
