@@ -1,11 +1,11 @@
-import { Modal } from '../Modal/Modal';
+import { Modal } from './../Modal/Modal';
 import { useState } from 'react';
 import './AuthorInfo.css';
 export const AuthorInfo = () => {
 	const [isActive, setIsActive] = useState(false);
 	const breakpoint = window.innerWidth;
 
-	return breakpoint < 560 ?(
+	return breakpoint < 560 ? (
 		
 		<footer className={isActive ? 'modalActive' : 'modalDisable'}>
 			<div className='authorInfoContainer'>

@@ -1,4 +1,4 @@
-import { AuthorInfo } from '../AuthorInfo/AuthorInfo';
+import { AuthorInfo } from './../AuthorInfo/AuthorInfo';
 import './textContent.css';
 export const TextContent = () => {
 	return (

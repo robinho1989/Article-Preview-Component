@@ -1,5 +1,5 @@
-import { Mainimage } from '../MainImage/MainImage';
-import { TextContent } from '../TextContent/TextContent';
+import { Mainimage } from './../MainImage/MainImage';
+import { TextContent } from './../TextContent/TextContent';
 import './card.css';
 export const Card = () => {
 	return (
